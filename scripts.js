@@ -8,25 +8,26 @@ const test = document.querySelector('#palindrome-form').addEventListener('submit
     document.querySelector('#validation').innerText = ''
     document.querySelector('#palindrome').innerText = ''
 
-    let arr = e.target.elements.text.value.toLowerCase().replace(/\s+/g, '').split('')
-    // let arrCapitalize = arr.charAt(0).toUpperCase() + arr.slice(1)
+    // removes symbols and splits each letter into an array
+    let arr = e.target.elements.text.value.toLowerCase().replace(/[^a-zA-Z0-9]/g, '').split('')
     let b = arr.length - 1
-    let count = 0
+
+    // loops through the array and checks both sides incrementally
     if (arr.length > 2) {
         for (let a = 0; a < Math.floor(arr.length / 2); a++) {   
             if (arr[a] === arr[b]) {
                 b--
-                count++
             } else {
+                // clears input b/c of return
                 e.target.elements.text.value = ''
                 return document.querySelector('#validation').innerText =`"${arrCapitalize(arr.join(''))}" is not a palindrome`
             }
         }
         if (count = Math.floor(arr.length / 2)) {
-            document.querySelector('#palindrome').innerText = `"${arrCapitalize(arr.join(''))}" is a palindrome!`
+            document.querySelector('#palindrome').innerText = `"${e.target.elements.text.value}" is a palindrome!`
         }
     } else {
-        document.querySelector('#validation').innerText = 'You must enter more than two characters in order to check for a palindrome'
+        document.querySelector('#validation').innerText = 'You must enter more than two letters in order to check for a palindrome'
     }
     e.target.elements.text.value = ''
     })
