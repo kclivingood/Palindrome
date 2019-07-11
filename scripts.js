@@ -10,6 +10,7 @@ const test = document.querySelector('#palindrome-form').addEventListener('submit
 
     // removes symbols and splits each letter into an array
     let arr = e.target.elements.text.value.toLowerCase().replace(/[^a-zA-Z0-9]/g, '').split('')
+    let message = e.target.elements.text.value.replace(/[^a-zA-Z0-9]/g, '')
     let b = arr.length - 1
 
     // loops through the array and checks both sides incrementally
@@ -18,13 +19,12 @@ const test = document.querySelector('#palindrome-form').addEventListener('submit
             if (arr[a] === arr[b]) {
                 b--
             } else {
-                // clears input b/c of return
-                e.target.elements.text.value = ''
-                return document.querySelector('#validation').innerText =`"${arrCapitalize(arr.join(''))}" is not a palindrome`
+                document.querySelector('#validation').innerText =`"${message}" is not a palindrome`
+                return e.target.elements.text.value = ''
             }
         }
         if (count = Math.floor(arr.length / 2)) {
-            document.querySelector('#palindrome').innerText = `"${e.target.elements.text.value}" is a palindrome!`
+            document.querySelector('#palindrome').innerText = `"${message}" is a palindrome!`
         }
     } else {
         document.querySelector('#validation').innerText = 'You must enter more than two letters in order to check for a palindrome'
