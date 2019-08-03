@@ -1,0 +1,85 @@
+body {
+    text-align: center;
+    font-size: 16px;
+    margin: 5em auto 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(abstract-design-diagonal.jpg);
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+
+.container {
+    width: 40%;
+    margin: 1.2em auto;
+    padding: 2em;
+    border-radius: 1em;
+    background-color: rgb(220,220,220);
+}
+
+.phonix {
+    font-size: 1em;
+}
+
+.definition {
+    font-size: 1.2em;
+}
+
+#palindrome-form {
+    width: 100%;
+    margin-top: 3em;
+}
+
+input {
+    padding: 1.2em;
+}
+
+.input-field {
+    width: 50%;
+    font-size: 0.7em;
+    border: 0.2em solid gray;
+    border-radius: 0.5em;
+    transition: 0.3s;
+    font-family: Arial, sans-serif;
+}
+
+.input-field:focus {
+    border: 0.2em solid rgb(39,39,39);
+}
+
+.submit-btn {
+    background-color: rgb(39,39,39);
+    color: white;
+    font-size: 0.7em;
+    font-weight: bold;
+    border-radius: 0.5em;
+    border: 0.2em solid rgb(39,39,39);
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+}
+
+#validation {
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1em;
+}
+
+#not-palindrome {
+    font-size: 5em;
+    padding: 2em;
+    line-height: 0.01em;
+    text-align: center;
+}
+
+#palindrome {
+    color: rgb(12,152,114);
+    font-size: 2em;
+}
