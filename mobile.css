@@ -10,19 +10,20 @@
 
     .container {
         width: 70%;
+        background-color: green;
     }
 
     .input-field {
-        width: 80%;
-        margin-bottom: 2em;
+        width: 50%;
     }
 
     #palindrome {
         font-size: 1.5em;
+    }
 }
 
 /* for Galaxy & iPhone X/XS */
-@media (max-width: 415px) and (min-height: 738px) {
+@media (min-height: 738px) {
     body {
         margin-top: 5em;
     }
@@ -33,12 +34,12 @@
     }
 
     .container {
-        width: 80%;
+        width: 70%;
+        background-color: blue;
     }
 
     .input-field {
-        width: 80%;
-        margin-bottom: 2em;
+        width: 50%;
     }
 }
 
@@ -53,11 +54,12 @@
     }
 
     .container {
-        width: 80%;
+        width: 60%;
+        background-color: orange;
     }
 
     .input-field {
-        width: 80%;
+        width: 50%;
         margin-bottom: 2em;
     }
 }
@@ -73,6 +75,7 @@
     }
 
     .container {
-        width: 40%;
+        width: 60%;
+        background-color: white;
     }
 }
