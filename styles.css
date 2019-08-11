@@ -16,6 +16,7 @@ h3 {
 
 
 .container {
+    min-width: 340px;
     width: 40%;
     margin: 1.2em auto;
     padding: 2em;
