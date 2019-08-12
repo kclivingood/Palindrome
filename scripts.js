@@ -6,7 +6,7 @@ document.querySelector('#palindrome-form').addEventListener('submit', function (
 
     // removes symbols and splits each letter into an array
     let arr = e.target.elements.text.value.toLowerCase().replace(/[^a-zA-Z0-9]/g, '').split('')
-    let message = e.target.elements.text.value.replace(/[^a-zA-Z0-9]/g, '')
+    let message = e.target.elements.text.value.replace(/[^a-zA-Z0-9 ]/g, '')
     let b = arr.length - 1
 
     // loops through the array and checks both sides incrementally

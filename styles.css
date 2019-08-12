@@ -83,13 +83,6 @@ input {
     padding: 1em;
 }
 
-#not-palindrome {
-    font-size: 5em;
-    padding: 2em;
-    line-height: 0.01em;
-    text-align: center;
-}
-
 #palindrome {
     color: rgb(12,152,114);
     font-size: 2em;
