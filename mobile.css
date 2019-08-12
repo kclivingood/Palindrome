@@ -4,16 +4,22 @@
     }
 
     h1 {
-        font-size: 2em;
+        font-size: 1em;
     }
 
+    .phonix {
+        font-size: 0.9em;
+    }
+
+    .definition {
+        font-size: 0.9em;
+    }
     .container {
         min-width: 100px;
-        max-width: 70%;
+        width: 50%;
     }
 
     .input-field {
-        width: 100%;
         margin-bottom: 1em;
     }
 
@@ -22,7 +28,7 @@
     }
 }
 
-@media all and (max-width: 599px) {
+@media all and (min-width: 321px) and (max-width: 599px) {
     body {
         margin-top: 3em;
     }
@@ -44,7 +50,7 @@
     }
 }
 
-@media all and (min-width: 600px) and (max-width:799px) {
+@media all and (min-width: 600px) and (max-width:859px) {
     body {
         margin-top: 5em;
     }
@@ -63,17 +69,17 @@
     }
 }
 
-@media all and (min-width: 700px) and (max-width: 1400px) {
+@media all and (min-width: 860px) and (max-width: 1200px) {
     body {
         margin-top: 5em;
     }
 
     h1 {
-        font-size: 2em;
+        font-size: 3em;
     }
 
     .container {
-        width: 60%;
+        width: 40%;
     }
 
     .input-field {
