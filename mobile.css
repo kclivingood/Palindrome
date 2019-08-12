@@ -1,5 +1,28 @@
-/* for iPhone 6/7/8 & 6/7/8 Plus - portrait & landscape */
-@media (max-height: 737px) {
+@media all and (max-width: 320px) {
+    body {
+        margin-top: 3em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .container {
+        min-width: 100px;
+        max-width: 70%;
+    }
+
+    .input-field {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    #palindrome {
+        font-size: 1.5em;
+    }
+}
+
+@media all and (max-width: 599px) {
     body {
         margin-top: 3em;
     }
@@ -21,8 +44,7 @@
     }
 }
 
-/* for Galaxy & iPhone X/XS */
-@media (max-width: 415px) and (min-height: 738px) {
+@media all and (min-width: 600px) and (max-width:799px) {
     body {
         margin-top: 5em;
     }
@@ -41,8 +63,7 @@
     }
 }
 
-/* for iPad & Kindle Fire HDX -- PORTRAIT */
-@media (max-width: 801px) and (min-height: 1000px) {
+@media all and (min-width: 700px) and (max-width: 1400px) {
     body {
         margin-top: 5em;
     }
@@ -58,20 +79,5 @@
     .input-field {
         width: 50%;
         margin-bottom: 2em;
-    }
-}
-
-/* for iPad & Kindle Fire HDX -- LANDSCAPE */
-@media (min-width: 1001px) and (max-width: 1300px) {
-    body {
-        margin-top: 5em;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    .container {
-        width: 60%;
     }
 }
